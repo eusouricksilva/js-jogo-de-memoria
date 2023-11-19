@@ -1,3 +1,7 @@
+@media screen and (max-width: 768px) {
+  /* Estilos para telas menores */
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -5,6 +9,16 @@ body {
   min-height: 100vh;
   background: #fc1e8a;
   user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
 }
 
 .container {

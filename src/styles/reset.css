@@ -5,3 +5,26 @@
   box-sizing: border-box;
   font-family: monospace;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para telas menores */
+
+  .container {
+    flex-direction: column; /* Altera a direção do flex container para coluna em telas menores */
+  }
+
+  .column {
+    flex: 1 0 100%; /* Ocupa 100% da largura em telas menores */
+    margin: 10px 0; /* Espaçamento superior e inferior em telas menores */
+  }
+}
